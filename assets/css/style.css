@@ -119,3 +119,25 @@ span{
     font-size: 15px;
     color: #326d0d;
 }
+
+.lista-acoes{
+    display: grid;
+}
+
+.formulario{
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px 65px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.formulario input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 15px;
+}

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ações Práticas | O que você pode fazer</title>
     <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="/assets/js/script.js" defer></script>
+
 
     <link rel="icon" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🧐</text></svg>">
 </head>
@@ -15,7 +17,7 @@
             <a href="sobre.html">📖Sobre</a>
             <a href="acoes.html" class="ativo">✅ Ações</a>
         </nav>
-        <div>✅</div>
+        <div class="emoji" role="img" aria-label="Ações práticas">✅</div>
         <h1>Ações Práticas</h1>
         <p>O que VOCÊ pode fazer para economizar água.</p>
     </header>
@@ -23,14 +25,14 @@
     <main>
         <section>
             <h2>Ações que fazem a diferença</h2>
-            <div>
+            <div class="lista-acoes" id="container-acoes">
             </div>
         </section>
 
-        <section>
-            <div>
+        <section class="secao-cinza">
+            <div class="container-central">
                 <h2>Quero fazer parte!</h2>
-                <form action="">
+                <form class="formulario" id="formulario-adesao" action="">
 
                     <label for="nome">Seu nome completo</label>
                     <input type="text" id="nome" required placeholder="Ex: João da Silva">
@@ -49,7 +51,7 @@
     <footer>
         <p><strong>Equipe:</strong> Os Guardiões da Água</p>
         <p>&copy; Projeto Integrador - Liga Steam / ArcelorMittal -  2026</p>
-        <a href="#">Voltar ao início</a>
+        <a href="#" class="botao">Voltar ao início</a>
     </footer>
 </body>
 </html>
