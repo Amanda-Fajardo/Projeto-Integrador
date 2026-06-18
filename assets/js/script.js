@@ -1,10 +1,10 @@
 const acoes = [
-    {icone: "🚰", texto: 'Feche bem a torneira quando não estiver usando'},
-    {icone: "🔔", texto: 'Avise logo se perceber um vazamento'},
-    {icone: "♻️", texto: 'Reutilize água de limpeza quando possível'},
-    {icone: "🥤", texto: 'Use copo ou garrafa reutilizável'},
-    {icone: "💬", texto: 'Conte para seus colegas sobre essas dicas'},
-    {icone: "🌍", texto: 'Multiplique - cada pessoa influencia outras 5'}
+    {icone: "💡", titulo: 'Aproveite a Luz Natural', texto: 'Posicione postos de trabalho perto de janelas e mantenha persianas abertas durante o dia para diminuir o uso de lâmpadas.'},
+    {icone: "🔌", titulo: 'Evite o Stand-by', texto: 'Equipamentos eletrônicos consomem energia mesmo sem uso direto. Tire carregadores e aparelhos da tomada ao final do expediente.'},
+    {icone: "☀️", titulo: 'Apoie o Sistema Solar', texto: 'Estimule o debate sobre o aproveitamento das grandes áreas de telhado da indústria para instalação de placas solares.'},
+    {icone: "🍃", titulo: 'Climatização Inteligente', texto: 'Mantenha portas e janelas bem fechadas enquanto o ar-condicionado estiver ligado para não forçar o motor.'},
+    {icone: "💬", titulo: 'Discuta com a Equipe', texto: 'Troque ideias de eficiência energética em reuniões. Pequenas mudanças de rotina geram grandes economias de escala.'},
+    {icone: "📈", titulo: 'Multiplique o Hábito', texto: 'Compartilhe os resultados de economia com seu setor. Ver a curva de consumo cair motiva a todos a continuar colaborando.'}
 ]
 
 //Renderização dinâmica
@@ -16,6 +16,7 @@ for(let i = 0; i < acoes.length; i++) {
     div.className = "acao-item"
     div.innerHTML = `
         <div class="acao-icone">${item.icone}</div>
+        <h3 class="acao-titulo">${item.titulo}</h3>
         <p class="acao-texto">${item.texto}</div>
     `
     container.appendChild(div)
