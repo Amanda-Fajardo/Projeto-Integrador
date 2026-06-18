@@ -30,3 +30,22 @@ window.addEventListener('scroll', () => {
         nav.style.opacity = 1
     }
 })
+
+const form = document.getElementById("formulario-adesao");
+const msg = document.getElementById("mensagem-retorno");
+
+form.addEventListener("submit", () => {
+    event.preventDefault()
+
+
+    if(form.checkValidity()) {
+        const nome = document.getElementById("nome").value
+        msg .textContent = `✅ Sucesso, ${nome}! Adesão registrada.`
+        msg.className = 'mensagem-retorno sucesso'
+        form.reset()
+    } else{
+        msg.textContent = '❌ Preencha os campos corretamente.';
+        msg.className = 'mensagem-retorno erro';
+        msg.style.display = 'block'
+    }
+})
