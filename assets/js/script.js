@@ -22,16 +22,6 @@ for(let i = 0; i < acoes.length; i++) {
     container.appendChild(div)
 }
 
-const nav = document.querySelector('.menu-navegacao')
-
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 10){
-        nav.style.opacity = 0.5
-    } else{
-        nav.style.opacity = 1
-    }
-})
-
 const form = document.getElementById("formulario-adesao");
 const msg = document.getElementById("mensagem-retorno");
 
