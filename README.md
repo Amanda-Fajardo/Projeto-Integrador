@@ -72,6 +72,7 @@ projeto/
 │       └── script.js      # Lógica do formulário e interações
 │
 └── README.md              # Documentação do projeto
+```
 
 ---
 
